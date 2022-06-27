@@ -1,0 +1,5 @@
+(defun at(lst i)
+  (if (/= i 0) (at (cdr lst) (1- i)) (return-from at (car lst)) )
+  )
+(setq x '(1 2 3 4))
+(print(at x 1))

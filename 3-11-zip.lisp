@@ -1,0 +1,5 @@
+(defun zip (l1 l2) 
+(if (or (endp l1) (endp l2)) '()
+(cons (cons (car l1) (car l2)) (zip (cdr l1) (cdr l2)) )
+))
+(print (zip '(x 3 apple) '(4 cat + a)))
